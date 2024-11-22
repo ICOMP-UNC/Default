@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TPFinal: Archivo de código fuente C:/Users/Franco/Desktop/ED3/TPFinal/src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TPFinal<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Trabajo Final ED3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('main_8c_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="pwm_8h.html">pwm.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="adc_8h.html">adc.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html">uart.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">timer.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="dma_8h.html">dma.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="boton_8h.html">boton.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   25</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="pwm_8h.html#a8bb1c6a2b219671a64358ca9a1423750">configurarPWM</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="boton_8h.html#ad4766c754618e49fc7a7f77421a00716">configurarBoton</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="adc_8h.html#a37a1f9822cce3c73e747d0aa4736e3ad">configurarADC</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="uart_8h.html#a24ebe9ee71c6e7ddd445fca56cd5ce8c">configurarUART</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="timer_8h.html#a281f6b67b45e1f1074593490e9cc8072">configurarTemporizador</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="dma_8h.html#a072285866ce751a63af85950f35e2666">configurarDMA</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        __WFI(); <span class="comment">// Esperar interrupción</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+</div>
+<div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div><div class="ttdoc">Prototipos de funciones para el manejo del ADC.</div></div>
+<div class="ttc" id="aadc_8h_html_a37a1f9822cce3c73e747d0aa4736e3ad"><div class="ttname"><a href="adc_8h.html#a37a1f9822cce3c73e747d0aa4736e3ad">configurarADC</a></div><div class="ttdeci">void configurarADC(void)</div><div class="ttdoc">Configura el ADC para leer los canales de la batería y la temperatura.</div><div class="ttdef"><b>Definition</b> <a href="adc_8c_source.html#l00019">adc.c:19</a></div></div>
+<div class="ttc" id="aboton_8h_html"><div class="ttname"><a href="boton_8h.html">boton.h</a></div><div class="ttdoc">Prototipos de funciones para el manejo de EINT.</div></div>
+<div class="ttc" id="aboton_8h_html_ad4766c754618e49fc7a7f77421a00716"><div class="ttname"><a href="boton_8h.html#ad4766c754618e49fc7a7f77421a00716">configurarBoton</a></div><div class="ttdeci">void configurarBoton(void)</div><div class="ttdoc">Configura el botón para generar una interrupción por flanco de bajada.</div><div class="ttdef"><b>Definition</b> <a href="boton_8c_source.html#l00010">boton.c:10</a></div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Definiciones generales del proyecto.</div></div>
+<div class="ttc" id="adma_8h_html"><div class="ttname"><a href="dma_8h.html">dma.h</a></div><div class="ttdoc">Prototipos de funciones para el manejo del DMA.</div></div>
+<div class="ttc" id="adma_8h_html_a072285866ce751a63af85950f35e2666"><div class="ttname"><a href="dma_8h.html#a072285866ce751a63af85950f35e2666">configurarDMA</a></div><div class="ttdeci">void configurarDMA(void)</div><div class="ttdef"><b>Definition</b> <a href="dma_8c_source.html#l00003">dma.c:3</a></div></div>
+<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">Función principal que configura todos los módulos y espera interrupciones.</div><div class="ttdef"><b>Definition</b> <a href="#l00025">main.c:25</a></div></div>
+<div class="ttc" id="apwm_8h_html"><div class="ttname"><a href="pwm_8h.html">pwm.h</a></div><div class="ttdoc">Prototipos de funciones para generar PWM.</div></div>
+<div class="ttc" id="apwm_8h_html_a8bb1c6a2b219671a64358ca9a1423750"><div class="ttname"><a href="pwm_8h.html#a8bb1c6a2b219671a64358ca9a1423750">configurarPWM</a></div><div class="ttdeci">void configurarPWM(void)</div><div class="ttdoc">Configura el PWM para controlar un servo.</div><div class="ttdef"><b>Definition</b> <a href="pwm_8c_source.html#l00010">pwm.c:10</a></div></div>
+<div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div><div class="ttdoc">Prototipos de funciones para el manejo del timer.</div></div>
+<div class="ttc" id="atimer_8h_html_a281f6b67b45e1f1074593490e9cc8072"><div class="ttname"><a href="timer_8h.html#a281f6b67b45e1f1074593490e9cc8072">configurarTemporizador</a></div><div class="ttdeci">void configurarTemporizador(void)</div><div class="ttdoc">Configura el temporizador para generar interrupciones periódicas.</div><div class="ttdef"><b>Definition</b> <a href="timer_8c_source.html#l00009">timer.c:9</a></div></div>
+<div class="ttc" id="auart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">Prototipos de funciones para el manejo de UART.</div></div>
+<div class="ttc" id="auart_8h_html_a24ebe9ee71c6e7ddd445fca56cd5ce8c"><div class="ttname"><a href="uart_8h.html#a24ebe9ee71c6e7ddd445fca56cd5ce8c">configurarUART</a></div><div class="ttdeci">void configurarUART(void)</div><div class="ttdoc">Configura la UART para la comunicación serial.</div><div class="ttdef"><b>Definition</b> <a href="uart_8c_source.html#l00011">uart.c:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
